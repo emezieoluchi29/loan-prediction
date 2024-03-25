@@ -15,7 +15,7 @@ st.image('pngwing.com (2).png', width= 500)
 
 st.markdown("<h4 style = 'margin: -30px; color: green; text-align: center; font-family: helvetica '>Project Overview</h4>", unsafe_allow_html = True)
 
-st.write("The goal of this project is to develop a self-help predictive model that assesses different phone features and group the prices based on these features. By leveraging machine learning techniques, we aim to provide insights into the factors influencing price range based on features, empowering stakeholders to make informed decisions")
+st.write("The aim of this data analysis project is to develop a model that predicts the eligibility of a user for a loan based on various parameters. By leveraging data analysis techniques, we seek to provide insights into the factors influencing loan eligibility and construct a predictive model to assist in decision-making processes for lending institutions.")
 
 st.markdown("<br>", unsafe_allow_html= True)
 st.dataframe(data, use_container_width= True)
