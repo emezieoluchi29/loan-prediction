@@ -52,7 +52,7 @@ if prediction_button:
     predicted = model.predict(inputs)
 
     if predicted[0]==1:
-        st.success(f"Unfortunately...Your Loan will not be approved")
+        st.erro(f"Unfortunately...Your Loan will not be approved")
         st.image('pngwing.com (5).png')
     elif predicted[0]==0:
         st.success(f"Congratulations... Your loan will be approved. Pls come to the office to process your loan approval")
