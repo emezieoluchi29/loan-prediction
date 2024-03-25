@@ -22,8 +22,8 @@ st.dataframe(data, use_container_width= True)
 
 st.sidebar.image('pngwing.com (3).png', caption = 'Welcome Dear User')
 
-loan_amount = st.sidebar.number_input(' loan_amount')
-income_annum = st.sidebar.number_input(' income_annum',)
+loan_amount = st.sidebar.number_input(' loan_amount',10000)
+income_annum = st.sidebar.number_input(' income_annum',15000)
 cibil_score = st.sidebar.number_input(' cibil_score')
 residential_assets_value = st.sidebar.number_input(' residential_assets_value')
 commercial_assets_value = st.sidebar.number_input(' commercial_assets_value')
