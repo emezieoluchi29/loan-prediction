@@ -51,7 +51,7 @@ To replicate the analysis:
 
 ## Results
 
-The final model achieved an accuracy of X% on the test dataset, effectively predicting loan eligibility based on the provided parameters.
+The final model achieved an accuracy of 98% on the test dataset, effectively predicting loan eligibility based on the provided parameters.
 
 ## Future Improvements
 
