@@ -37,21 +37,24 @@ st.markdown("<br>", unsafe_allow_html= True)
 st.markdown("<h4 style = 'margin: -30px; color: green; text-align: center; font-family: helvetica '>Input Variable</h4>", unsafe_allow_html = True)
 
 inputs = pd.DataFrame()
-#inputs[' loan_amount'] = [loan_amount]
-#inputs[' income_annum'] = [income_annum]
-#inputs[' cibil_score'] = [cibil_score]
-#inputs[' residential_assets_value'] = [residential_assets_value]
-#inputs[' commercial_assets_value'] = [commercial_assets_value]
-#inputs[' luxury_assets_value'] = [luxury_assets_value]
-#inputs[' no_of_dependents'] = [no_of_dependents]
+inputs[' loan_amount'] = [loan_amount]
+inputs[' income_annum'] = [income_annum]
+inputs[' cibil_score'] = [cibil_score]
+inputs[' residential_assets_value'] = [residential_assets_value]
+inputs[' commercial_assets_value'] = [commercial_assets_value]
+inputs[' luxury_assets_value'] = [luxury_assets_value]
+inputs[' no_of_dependents'] = [no_of_dependents]
 
-#st.dataframe(inputs, use_container_width= True)
+st.dataframe(inputs, use_container_width= True)
 
 prediction_button = st.button('Predict loan status')
 if prediction_button:
     predicted = model.predict(inputs)
 
-    if predicted[0]==0:
-        st.success(f'Your loan request is Approved')
-    elif predicted[0]==1:
-        st.success(f'Your loan request is Denied')
+    if predicted[0]==1:
+        st.success(f"Unfortunately...Your Loan will not be approved")
+        st.image('pngwing.com (5).png')
+    elif predicted[0]==0:
+        st.success(f"Congratulations... Your loan will be approved. Pls come to the office to process your loan approval")
+        st.image('pngwing.com (4).png')
+
